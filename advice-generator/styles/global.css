@@ -1,0 +1,74 @@
+:root{
+--LightCyan: hsl(193, 38%, 86%);
+--NeonGreen: hsl(150, 100%, 66%);
+--GrayishBlue: hsl(217, 19%, 38%);
+--DarkGrayishBlue: hsl(217, 19%, 24%);
+--DarkBlue: hsl(218, 23%, 16%);
+}
+
+
+html,body{
+    font-size: 28px;
+    background-color: var(--DarkBlue);
+    height: 100%;
+    
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: var(--DarkGrayishBlue);
+    width: 375px;
+    max-width: 375px;
+    min-width: 375px;
+    text-align: center;
+    padding: 24px;
+    color: var(--LightCyan);
+    position: relative;
+    border-radius: 12px;
+}
+
+.container p{
+    color: var(--NeonGreen);
+    font-size: 8px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+
+.container h1{
+    margin-top: 12px;
+}
+
+
+.hr{
+    margin-top: 24px;
+    height:12px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.dice{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: var(--NeonGreen);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.dice:hover{
+    box-shadow: 0px 0px 8px 4px var(--NeonGreen);
+}

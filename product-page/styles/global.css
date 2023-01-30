@@ -65,6 +65,39 @@ nav ul li:hover {
     background-color: var(--Orange);
     color: white;
 }
+
+.cart-contain{
+    position: absolute;
+    padding: 12px;
+    border-radius: 12px;
+    top: 200%;
+    right: -500%;
+    width: 240px;
+    background-color: white;
+    box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, .5);
+}
+
+.cart-contain .cart-title{
+    border-bottom: 1px solid black;
+    padding: 12px;
+}
+.cart-contain .cart-main{
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart-image{
+    width: 30%;
+}
+.cart-product-name{
+    width: 60%;
+}
+.cart-contain .cart-footer{
+    width: 100%;
+    margin-top: 12px;
+}
+
+
 .photo{
     border: 2px solid var(--White);
     max-width: max-content;
@@ -101,7 +134,6 @@ section .gallery{
     object-fit: fill;
     position: relative;
     border-radius: 24px;
-    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
 }
@@ -196,3 +228,64 @@ button{
     cursor: pointer;
 }
 
+.photograph{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.shadow-gallery{
+    width: 50%;
+    position: relative;
+}
+
+.after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    right: 0;
+    top:50%;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    background-image: url("/icon-next.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor:pointer;
+    color:var(--Orange);
+    z-index: 1;
+}
+
+.before{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    left: 0;
+    top:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-image: url("/icon-previous.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    cursor:pointer;
+    color:var(--Orange);
+}
+
+.close-button{
+    position: absolute;
+    right: 5%;
+}
+
+.close-button > *{
+    background-color: white;
+}

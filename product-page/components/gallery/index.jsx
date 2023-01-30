@@ -1,26 +1,30 @@
 "use client"
 import Image from "next/image";
-import React,{useState} from "react";
+import React from "react";
 
-function Gallery() {
-  const [photo, setPhoto] = useState("/image-product-1.jpg")
+function Gallery({showPhoto,setShowPhoto, photo,setPhoto}) {
+  
   return (
     <>
       <div className="gallery">
         <div className="big-photo">
           <Image
-            src={photo}
+            onClick={()=> setShowPhoto(!showPhoto)}
+            src={`/image-product-${photo}.jpg`}
             fill
             alt="123"
           />
         </div>
+        
         <div className="little-photo">
-          <Image onClick={(e)=> setPhoto("/image-product-1.jpg")} src="/image-product-1.jpg" width={80} height={80} alt="123" />
-          <Image onClick={(e)=> setPhoto("/image-product-2.jpg")} src="/image-product-2.jpg" width={80} height={80} alt="123" />
-          <Image onClick={(e)=> setPhoto("/image-product-3.jpg")} src="/image-product-3.jpg" width={80} height={80} alt="123" />
-          <Image onClick={(e)=> setPhoto("/image-product-4.jpg")} src="/image-product-4.jpg" width={80} height={80} alt="123" />
+          <Image onClick={(e)=> setPhoto(1)} src="/image-product-1-thumbnail.jpg" width={80} height={80} alt="123" />
+          <Image onClick={(e)=> setPhoto(2)} src="/image-product-2-thumbnail.jpg" width={80} height={80} alt="123" />
+          <Image onClick={(e)=> setPhoto(3)} src="/image-product-3-thumbnail.jpg" width={80} height={80} alt="123" />
+          <Image onClick={(e)=> setPhoto(4)} src="/image-product-4-thumbnail.jpg" width={80} height={80} alt="123" />
         </div>
       </div>
+
+      
     </>
   );
 }

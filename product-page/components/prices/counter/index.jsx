@@ -2,6 +2,9 @@
 import Image from 'next/image'
 
 function Counter({quantity,setQuantity}) {
+  if(quantity === -1){
+    setQuantity(0)
+  }
 
   return (
     <div className="counter">

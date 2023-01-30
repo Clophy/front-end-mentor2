@@ -34,6 +34,9 @@ function Header({ cart, setCart }) {
         </nav>
 
         <div className="profile">
+        <div className="menu"><Image src="/icon-menu.svg" width={16}
+              height={16}
+              alt="cart"/></div>
           <div className="cart">
             {cart > 0 && <span className="cart-quantity">{cart}</span>}
             <Image

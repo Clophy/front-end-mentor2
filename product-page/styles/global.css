@@ -289,3 +289,30 @@ button{
 .close-button > *{
     background-color: white;
 }
+
+.menu{
+    display: none;
+}
+
+
+@media screen and (max-width:600px) {
+
+    nav{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        top: 0px;
+        left: -5%;
+        z-index: 50;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    nav ul{
+        display: inline-block;
+        width: 40%;
+        background-color: white;
+    }
+    .menu{
+        display: block;
+    }
+}

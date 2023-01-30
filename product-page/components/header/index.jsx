@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
-function Header({ cart }) {
+function Header({ cart, setCart }) {
   const [cartToggle, setCartToggle] = useState(false);
   return (
     <>
@@ -48,7 +48,8 @@ function Header({ cart }) {
                 <div className="cart-title">
                   <p>Cart</p>
                 </div>
-                <div className="cart-main">
+                { cart > 0 &&
+                  <div className="cart-main">
                   <div className="cart-image">
                     <Image
                       src="/image-product-1.jpg"
@@ -59,9 +60,9 @@ function Header({ cart }) {
                   </div>
                   <div className="cart-product-name">
                     <p>Fall Limited Edition Sneakers</p>
-                    <p>$125.00</p>
+                    <p>$125.00</p><span> x {cart}</span>
                   </div>
-                  <div className="cart-delete">
+                  <div className="cart-delete" onClick={()=> setCart(0)}>
                     <Image
                       src="/icon-delete.svg"
                       width={12}
@@ -73,6 +74,7 @@ function Header({ cart }) {
                     <button>Check out</button>
                   </div>
                 </div>
+                }
               </div>
             )}
           </div>

@@ -5,6 +5,7 @@ import React, { useState } from "react";
 
 function Header({ cart, setCart }) {
   const [cartToggle, setCartToggle] = useState(false);
+  const [menu, setMenu] = useState("");
   return (
     <>
       <header>
@@ -13,7 +14,7 @@ function Header({ cart, setCart }) {
             <Image src="/logo.svg" width={120} height={24} alt="logo" />
           </Link>
         </div>
-        <nav>
+        <nav style={{display:`${menu}`}} onClick={()=> setMenu("none")}>
           <ul>
             <li>
               <Link href="/">Collections</Link>
@@ -34,7 +35,7 @@ function Header({ cart, setCart }) {
         </nav>
 
         <div className="profile">
-        <div className="menu"><Image src="/icon-menu.svg" width={16}
+        <div className="menu"  onClick={()=> setMenu("flex")}><Image src="/icon-menu.svg" width={16}
               height={16}
               alt="cart"/></div>
           <div className="cart">

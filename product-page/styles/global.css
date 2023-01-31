@@ -299,18 +299,19 @@ button{
 
     nav{
         position: absolute;
-        display: flex;
+        display: none;
         width: 100%;
         top: 0px;
         left: -5%;
         z-index: 50;
         height: 100vh;
-        background-color: rgba(0, 0, 0, .5);
+        background-color: rgba(0, 0, 0, .4);
     }
     nav ul{
         display: inline-block;
         width: 40%;
         background-color: white;
+        padding: 24px;
     }
     .menu{
         display: block;

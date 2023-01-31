@@ -295,6 +295,7 @@ button{
 }
 
 
+
 @media screen and (max-width:600px) {
 
     nav{
@@ -309,11 +310,25 @@ button{
     }
     nav ul{
         display: inline-block;
+        position: absolute;
+        height: 100%;
         width: 40%;
         background-color: white;
         padding: 24px;
+        z-index: 555;
     }
     .menu{
         display: block;
+    }
+    .xbox{
+        width: 100%;
+        height: 100%;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        width: 60%;
     }
 }

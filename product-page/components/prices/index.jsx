@@ -25,7 +25,7 @@ function Prices({cart, setCart}) {
         <div className="payment">
           <Counter quantity={quantity} setQuantity={setQuantity}/>
           <div className="button">
-            <button onClick={()=> setCart(Number(cart) + Number(quantity))}>Add to Cart</button>
+            <button onClick={()=> {setCart(Number(cart) + Number(quantity));setQuantity(0)}}>Add to Cart</button>
           </div>
         </div>
       </div>

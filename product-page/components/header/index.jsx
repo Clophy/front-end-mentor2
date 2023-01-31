@@ -10,11 +10,14 @@ function Header({ cart, setCart }) {
     <>
       <header>
         <div className="logo">
+        <span className="menu"  onClick={()=> setMenu("flex")}><Image src="/icon-menu.svg" width={16}
+              height={16}
+              alt="cart"/></span>
           <Link href="/">
             <Image src="/logo.svg" width={120} height={24} alt="logo" />
           </Link>
         </div>
-        <nav style={{display:`${menu}`}} onClick={()=> setMenu("none")}>
+        <nav style={{display:`${menu}`}}>
           <ul>
             <li>
               <Link href="/">Collections</Link>
@@ -32,12 +35,11 @@ function Header({ cart, setCart }) {
               <Link href="/">Contact</Link>
             </li>
           </ul>
+          <div className="xbox" style={{display:`${menu}`}} onClick={()=> setMenu("none")}></div>
         </nav>
 
         <div className="profile">
-        <div className="menu"  onClick={()=> setMenu("flex")}><Image src="/icon-menu.svg" width={16}
-              height={16}
-              alt="cart"/></div>
+        
           <div className="cart">
             {cart > 0 && <span className="cart-quantity">{cart}</span>}
             <Image

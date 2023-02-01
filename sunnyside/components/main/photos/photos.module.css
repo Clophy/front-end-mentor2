@@ -1,0 +1,11 @@
+.contain{
+    @apply
+    flex
+}
+
+.imgbox{
+    @apply
+    relative
+    w-1/4
+    h-[400px]
+}

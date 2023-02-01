@@ -1,0 +1,22 @@
+.contain{
+    @apply
+    bg-green-400
+    flex
+    flex-col
+    items-center
+    justify-center
+    gap-4
+    p-16
+}
+.main ul{
+    @apply
+    flex
+    justify-center
+}
+
+.footer{
+    @apply
+    flex
+    justify-center
+}
+

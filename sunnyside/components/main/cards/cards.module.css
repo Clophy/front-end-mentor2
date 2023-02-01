@@ -1,0 +1,40 @@
+.container{
+    @apply
+    flex
+    flex-col
+}
+
+.contain{
+    @apply
+    flex
+    justify-between
+}
+.textbox{
+    @apply
+    w-1/2
+    p-4
+    flex
+    flex-col
+    items-center
+    justify-center
+}
+
+.imgbox{
+    @apply
+    w-1/2
+    relative
+    h-[640px]
+}
+
+.contain:nth-child(even){
+    @apply
+    flex-row-reverse
+}
+
+.imgtext{
+    @apply
+    absolute
+    text-center
+    mt-[500px]
+    px-12
+}

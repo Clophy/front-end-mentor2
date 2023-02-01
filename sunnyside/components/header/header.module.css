@@ -1,0 +1,49 @@
+.header{
+    background-image: url("/desktop/image-header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.title{
+    @apply
+    w-full
+    mx-auto
+    flex
+    justify-between
+    items-center
+    p-4
+}
+
+.title nav ul {
+    @apply
+    flex
+    gap-4
+    text-white
+    items-center
+}
+
+.contact{
+    @apply
+    bg-white
+    px-4
+    py-2
+    text-black
+    rounded-full
+    uppercase
+}
+
+.h1{
+    @apply
+    text-center
+    text-6xl
+    text-white
+    mt-12
+}
+
+.arrow img{
+    @apply
+    mx-auto
+    mt-24
+}

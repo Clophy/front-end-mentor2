@@ -1,0 +1,25 @@
+.container{
+    @apply
+    py-24
+
+}
+
+.container h4{
+    @apply
+    text-center
+}
+
+.team{
+    @apply
+    w-3/4
+    mx-auto
+    flex
+}
+
+.teamPerson{
+    @apply
+    p-4
+    flex
+    flex-col
+    gap-4
+}

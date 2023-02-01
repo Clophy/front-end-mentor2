@@ -50,7 +50,9 @@ function Header({ cart, setCart }) {
               alt="cart"
             />
             {cartToggle && (
-              <div className="cart-contain" onBlur={()=> setCartToggle(false)}>
+              <>
+              <div className="shadow-full" onClick={()=> setCartToggle(false)}></div>
+              <div className="cart-contain" >
                 <div className="cart-title">
                   <p>Cart</p>
                 </div>
@@ -82,6 +84,8 @@ function Header({ cart, setCart }) {
                 </div>
                 }
               </div>
+              </>
+              
             )}
           </div>
           <div className="photo">

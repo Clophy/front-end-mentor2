@@ -1,8 +1,10 @@
+"use client"
 import Image from 'next/image'
-import React from 'react'
+import React,{useState} from 'react'
 import Styles from './header.module.css'
 
 function Header({francues}) {
+  const [menu, setMenu] = useState(false)
   return (
     <>
     <header className={Styles.header}>
@@ -11,12 +13,15 @@ function Header({francues}) {
             <Image src="/logo.svg" width={120} height={48} alt="123"></Image>
             </div>
             <nav className={Styles.nav}>
-                <ul>
+                
+                  <ul className={`${menu ? "block" : "hidden"}`}>
                     <li>About</li>
                     <li>Services</li>
                     <li>Projects</li>
                     <li className={`${Styles.contact} ${francues.className}`}>Contact</li>
-                </ul>
+                </ul> 
+                
+                <Image onClick={()=> setMenu(!menu)} src="/icon-hamburger.svg" width={24} height={24} alt="sa"/>
             </nav>
         </div>
         <h1 className={`${Styles.h1} ${francues.className}`}>  We are creatives</h1>

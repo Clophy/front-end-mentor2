@@ -13,13 +13,41 @@
     items-center
     pt-8
 }
+.title nav img{
+    @apply
+    sm:hidden
+    inline
+}
 
 .title nav ul {
     @apply
-    flex
-    gap-8
-    text-gray-100
-    items-center
+    sm:gap-8
+    sm:text-gray-100
+    sm:items-center
+    sm:flex
+    sm:relative
+    sm:bg-transparent
+    sm:top-0
+    bg-white
+    absolute
+    top-24
+    left-0
+    right-0
+    w-11/12
+    mx-auto
+    text-center
+    /* i was making arrow for hamburger menu. */
+    /* after:content-[''] after:sm:content-[''] after:h-4 after:w-4 after:bg-red-500 after:absolute after:top-0 after:right-0 after:border after:border-red-500  after:-translate-y-[100%] */
+    
+}
+
+
+
+.title nav ul li{
+    @apply
+    sm:py-0
+    py-2
+
 }
 
 .title nav ul li:hover{
@@ -29,12 +57,15 @@
 
 .contact{
     @apply
-    bg-white
-    px-4
-    py-2
+    sm:bg-white
+    sm:px-4
+    sm:py-2
     text-black
     rounded-full
     uppercase
+    bg-yellow-300
+    w-1/2
+    mx-auto
 }
 .title nav ul .contact:hover{
     @apply
@@ -56,4 +87,8 @@
     @apply
     mx-auto
     mt-48
+}
+
+.hidden{
+    display: none;
 }

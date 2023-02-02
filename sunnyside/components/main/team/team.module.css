@@ -21,6 +21,8 @@
     mx-auto
     flex
     mt-12
+    sm:flex-row
+    flex-col
 }
 
 

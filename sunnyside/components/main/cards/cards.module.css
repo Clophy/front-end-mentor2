@@ -8,15 +8,19 @@
     @apply
     flex
     justify-between
+    flex-col-reverse
+    sm:flex-row
 }
 .textbox{
     @apply
-    w-1/2
+    sm:w-1/2
+    w-full
     flex
     flex-col
     items-start
     justify-center
     border
+    py-8
 }
 .textbox h2{
     @apply
@@ -49,14 +53,15 @@
 
 .imgbox{
     @apply
-    w-1/2
+    sm:w-1/2
+    w-full
     relative
     h-[640px]
 }
 
 .contain:nth-child(even){
     @apply
-    flex-row-reverse
+    sm:flex-row-reverse
 }
 
 .imgtext{

@@ -1,12 +1,14 @@
 .contain{
     @apply
     flex
+    flex-wrap
 }
 
 .imgbox{
     @apply
     relative
-    w-1/4
+    sm:w-1/4
+    w-1/2
     h-[300px]
     object-contain
 }

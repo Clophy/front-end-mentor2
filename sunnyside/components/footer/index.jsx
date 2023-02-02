@@ -10,7 +10,7 @@ function Footer() {
     <>
         <footer className={Styles.contain}>
             <div className={Styles.header}>
-                <Image src="/logo.svg" alt="asd" width={72} height={72} />
+                <Image src="/logo.svg" alt="asd" width={128} height={128} />
             </div>
             <div className={Styles.main}>
               <ul>

@@ -1,22 +1,27 @@
 .contain{
     @apply
-    bg-green-400
+    bg-green-300
     flex
     flex-col
     items-center
     justify-center
     gap-4
-    p-16
+    py-8
 }
 .main ul{
     @apply
     flex
     justify-center
+    gap-4
+    text-gray-600
+    mt-4
 }
 
 .footer{
     @apply
     flex
     justify-center
+    gap-4
+    text-gray-600
+    mt-6
 }
-

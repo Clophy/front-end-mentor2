@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
     <main className={barlow.className}>
-    <Header/>
-    <Main/>
+    <Header francues={francues}/>
+    <Main francues={francues}/>
     <Footer/>
     </main>
     </>

@@ -1,27 +1,30 @@
 .header{
     background-image: url("/desktop/image-header.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
 
 .title{
     @apply
-    w-full
+    w-11/12
     mx-auto
     flex
     justify-between
     items-center
-    p-4
+    pt-8
 }
 
 .title nav ul {
     @apply
     flex
-    gap-4
-    text-white
+    gap-8
+    text-gray-100
     items-center
+}
+
+.title nav ul li:hover{
+    @apply
+    text-white
 }
 
 .contact{
@@ -33,17 +36,24 @@
     rounded-full
     uppercase
 }
+.title nav ul .contact:hover{
+    @apply
+    text-black
+}
 
 .h1{
     @apply
     text-center
-    text-6xl
+    text-7xl
+    font-black
     text-white
     mt-12
+    uppercase
+    tracking-widest
 }
 
 .arrow img{
     @apply
     mx-auto
-    mt-24
+    mt-48
 }

@@ -12,12 +12,40 @@
 .textbox{
     @apply
     w-1/2
-    p-4
     flex
     flex-col
-    items-center
+    items-start
     justify-center
+    border
 }
+.textbox h2{
+    @apply
+    text-3xl
+    text-gray-800
+    font-black
+    w-1/3
+    -translate-x-16
+    mx-auto
+}
+.textbox p{
+    @apply
+    text-gray-400
+    w-3/4
+    mx-auto
+    mt-12
+}
+
+.textbox a{
+    @apply
+
+    font-bold
+    uppercase
+    w-3/4
+    mx-auto
+    mt-12
+}
+
+
 
 .imgbox{
     @apply
@@ -37,4 +65,19 @@
     text-center
     mt-[500px]
     px-12
+}
+
+.imgbox h3{
+    @apply
+    text-gray-600
+    text-3xl
+    -translate-y-24
+}
+
+.imgbox p{
+    @apply
+    w-3/4
+    text-center
+    mx-auto
+    text-gray-500
 }

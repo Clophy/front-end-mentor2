@@ -4,11 +4,11 @@ import Team from './team'
 import Style from './main.module.css'
 import Photos from './photos'
 
-function Main() {
+function Main({francues}) {
   return (
     <>
-    <Cards/>
-    <Team/>
+    <Cards francues={francues}/>
+    <Team francues={francues}/>
     <Photos/>
     </>
   )
